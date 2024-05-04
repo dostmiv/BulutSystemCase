@@ -14,6 +14,8 @@
 		65B3D7A62BE6511100293403 /* BulutSystemCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3D7A52BE6511100293403 /* BulutSystemCaseTests.swift */; };
 		65B3D7B02BE6511100293403 /* BulutSystemCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3D7AF2BE6511100293403 /* BulutSystemCaseUITests.swift */; };
 		65B3D7B22BE6511100293403 /* BulutSystemCaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3D7B12BE6511100293403 /* BulutSystemCaseUITestsLaunchTests.swift */; };
+		65B3D7C42BE651E800293403 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3D7C32BE651E800293403 /* API.swift */; };
+		65B3D7C62BE6521B00293403 /* API-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B3D7C52BE6521B00293403 /* API-Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		65B3D7AB2BE6511100293403 /* BulutSystemCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BulutSystemCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B3D7AF2BE6511100293403 /* BulutSystemCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulutSystemCaseUITests.swift; sourceTree = "<group>"; };
 		65B3D7B12BE6511100293403 /* BulutSystemCaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulutSystemCaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		65B3D7C32BE651E800293403 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		65B3D7C52BE6521B00293403 /* API-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API-Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,11 @@
 		65B3D7932BE6511000293403 /* BulutSystemCase */ = {
 			isa = PBXGroup;
 			children = (
+				65B3D7C22BE651B500293403 /* Animations */,
+				65B3D7C12BE651A600293403 /* ViewModels */,
+				65B3D7C02BE6519E00293403 /* Views */,
+				65B3D7BF2BE6519800293403 /* Models */,
+				65B3D7BE2BE6516D00293403 /* Networking */,
 				65B3D7942BE6511000293403 /* BulutSystemCaseApp.swift */,
 				65B3D7962BE6511000293403 /* ContentView.swift */,
 				65B3D7982BE6511100293403 /* Assets.xcassets */,
@@ -125,6 +134,43 @@
 				65B3D7B12BE6511100293403 /* BulutSystemCaseUITestsLaunchTests.swift */,
 			);
 			path = BulutSystemCaseUITests;
+			sourceTree = "<group>";
+		};
+		65B3D7BE2BE6516D00293403 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				65B3D7C32BE651E800293403 /* API.swift */,
+				65B3D7C52BE6521B00293403 /* API-Extensions.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		65B3D7BF2BE6519800293403 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		65B3D7C02BE6519E00293403 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65B3D7C12BE651A600293403 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		65B3D7C22BE651B500293403 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B3D7972BE6511000293403 /* ContentView.swift in Sources */,
+				65B3D7C42BE651E800293403 /* API.swift in Sources */,
+				65B3D7C62BE6521B00293403 /* API-Extensions.swift in Sources */,
 				65B3D7952BE6511000293403 /* BulutSystemCaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
