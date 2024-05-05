@@ -11,5 +11,6 @@ extension API {
     static let baseURLString = "https://api.openweathermap.org/data/3.0/"
     static func getURLfor(lat: Double, lon: Double) -> String {
         return "\(baseURLString)oncall?lat=\(lat)&lon=\(lon)&exclude=minutely&appid=\(key)&units=imperial"
+        //kanka burada oncall degil onecall olacak, degistireceksin bunu...
     }
 }
