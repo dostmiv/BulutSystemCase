@@ -11,7 +11,7 @@ import CoreLocation
 final class CityViewViewModel: ObservableObject {
     @Published var weather = WeatherResponse.empty()
     
-    @Published var city: String = "San Francisco" {
+    @Published var city: String = "Amasya, Sulova" {
         didSet{
             getLocation()
         }
@@ -44,7 +44,7 @@ final class CityViewViewModel: ObservableObject {
         if weather.current.weather.count > 0 {
             return weather.current.weather[0].icon
         }
-        return "sunny"
+        return "snowy"
     }
     var temprature:String{
         return getTempFor(temp: weather.current.temp)
@@ -108,30 +108,30 @@ final class CityViewViewModel: ObservableObject {
     }
     func getLottieAnimationFor(icon: String) -> String {
         switch icon {
-        case "01":
+        case "01d":
             return "sunny"
-        case "02":
+        case "01n":
             return "rainy"
-        case "03":
+        case "02d":
             return "snowy"
-        case "04":
+        case "02n":
             return "cloudy"
-        case "05":
+        case "03d":
             return "thunder"
-        case "06":
+        case "03n":
             return "sunnyRainy"
-        case "07":
+        case "04d":
             return "partlyCloudy"
         default:
-            return "sunny"
+            return "snowy"
         }
     }
     
     func getWeatherIconFor(icon: String) -> Image {
         switch icon {
-        case "01":
+        case "01d":
             return Image(systemName: "sun.max.fill")//sunny
-        case "02":
+        case "01n":
             return Image(systemName: "moon.fill")
         default:
             return Image(systemName: "sun.max.fill")
