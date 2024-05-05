@@ -14,7 +14,7 @@ final class NetworkManager<T: Codable>{
                 completion(.failure(.error(err: error!.localizedDescription)))
                 return
             }
-            guard let httpResponse = response as ? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
                 completion(.failure(.invalidResponse))
                 return
             }
@@ -23,7 +23,7 @@ final class NetworkManager<T: Codable>{
                     return
             }
             do {
-                let json = try JSONDecoder().decode(T.self,(from: data))
+                let json = try JSONDecoder().decode(T.self,from: data)
                 completion(.success(json))
             } catch let err {
                 print(String(describing: err))

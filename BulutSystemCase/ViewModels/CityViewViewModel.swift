@@ -8,7 +8,7 @@ import SwiftUI
 import CoreLocation
 
 // its observable because we will observe the changes on object
-final class CityViewViewModel: Observable {
+final class CityViewViewModel: ObservableObject {
     @Published var weather = WeatherResponse.empty()
     
     @Published var city: String = "San Francisco" {
@@ -24,6 +24,7 @@ final class CityViewViewModel: Observable {
     private lazy var dayFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEE"
+        return formatter
     }()
     
     private lazy var timeFormatter: DateFormatter = {
@@ -43,7 +44,7 @@ final class CityViewViewModel: Observable {
         if weather.current.weather.count > 0 {
             return weather.current.weather[0].icon
         }
-        return "sun.max.fill"
+        return "sunny"
     }
     var temprature:String{
         return getTempFor(temp: weather.current.temp)
