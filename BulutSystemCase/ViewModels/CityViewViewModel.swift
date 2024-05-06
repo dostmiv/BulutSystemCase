@@ -44,7 +44,7 @@ final class CityViewViewModel: ObservableObject {
         if weather.current.weather.count > 0 {
             return weather.current.weather[0].icon
         }
-        return "snowy"
+        return "sunny"
     }
     var temprature:String{
         return getTempFor(temp: weather.current.temp)
@@ -111,17 +111,35 @@ final class CityViewViewModel: ObservableObject {
         case "01d":
             return "sunny"
         case "01n":
-            return "rainy"
+            return "sunny"
         case "02d":
-            return "snowy"
+            return "partlyCloudy"
         case "02n":
-            return "cloudy"
+            return "partlyCloudy"
         case "03d":
-            return "thunder"
+            return "cloudy"
         case "03n":
-            return "sunnyRainy"
+            return "cloudy"
         case "04d":
             return "partlyCloudy"
+        case "04n":
+            return "partlyCloudy"
+        case "13d":
+            return "snowy"
+        case "13n":
+            return "snowy"
+        case "11d":
+            return "thunder"
+        case "11n":
+            return "thunder"
+        case "06d":
+            return "sunnyRainy"
+        case "06n":
+            return "sunnyRainy"
+        case "09d":
+            return "rainy"
+        case "09n":
+            return "rainy"
         default:
             return "snowy"
         }

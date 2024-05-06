@@ -13,10 +13,11 @@ struct ContentView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack(spacing: 0){
-                MenuHeaderView(cityVM: cityVM)
+                MenuHeaderView(cityVM: cityVM).padding()
                 ScrollView(showsIndicators: false){
                     CityView(cityVM: cityVM)
-            }
+                    
+                }.padding(.top,10)
             }.padding(.top,40)
         }.background(LinearGradient(gradient: Gradient(colors:[Color(red: 60, green: 66, blue: 161), Color(red:171,green: 174,blue:214)]),startPoint: .topLeading,endPoint: .bottomTrailing))
             .edgesIgnoringSafeArea(.all)

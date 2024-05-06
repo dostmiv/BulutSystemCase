@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "57F48151-928A-4033-AC2A-62CE7F44D10B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87F65F35-4B43-4D6B-8302-9F6E5967908A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BulutSystemCase/Networking/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetch(for:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "87F65F35-4B43-4D6B-8302-9F6E5967908A - 3c016f6f5a9ac8ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static BulutSystemCase.NetworkManager.fetch(for: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, BulutSystemCase.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BulutSystemCase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mertsondas/Desktop/projects/BulutSystemCase/BulutSystemCase/Networking/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17">
+               </Location>
+               <Location
+                  uuid = "87F65F35-4B43-4D6B-8302-9F6E5967908A - 3c016f6f5a9ac8ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static BulutSystemCase.NetworkManager.fetch(for: Foundation.URL, completion: (Swift.Result&lt;&#x3c4;_0_0, BulutSystemCase.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BulutSystemCase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mertsondas/Desktop/projects/BulutSystemCase/BulutSystemCase/Networking/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
