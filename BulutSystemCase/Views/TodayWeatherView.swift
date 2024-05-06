@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct TodayWeatherView: View {
+    func fahrenheitToCelsius(f: Double) -> Double {
+       return (f - 32) * 5/9
+    }
+    
     @ObservedObject var cityVM: CityViewViewModel
     var body: some View {
         VStack(spacing:10){
@@ -19,7 +23,7 @@ struct TodayWeatherView: View {
                 LottieView(name:cityVM.getLottieAnimationFor(icon: cityVM.weatherIcon))
                     .frame(width: 100, height: 100)
                 VStack(alignment: .leading){
-                    Text("\(cityVM.temprature)℃")
+                    Text("\(String(format: "%0.1f",fahrenheitToCelsius(f: Double(cityVM.temprature) ?? 10.0)))℃")
                         .font(.system(size: 42))
                     Text(cityVM.conditions)
                 }
@@ -51,6 +55,8 @@ struct TodayWeatherView: View {
             Text(title)
         }
     }
+    
+
 }
 
 

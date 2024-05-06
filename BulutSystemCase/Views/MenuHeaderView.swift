@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MenuHeaderView: View {
     @ObservedObject var cityVM: CityViewViewModel
-    @State private var searchTerm = "Amasya, Merkez"
+    @State private var searchTerm = "Izmir, Alsancak"
     var body: some View {
         HStack{
             TextField("", text: $searchTerm)

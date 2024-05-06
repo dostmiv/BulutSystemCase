@@ -18,13 +18,16 @@ struct DailiyWeatherView: View {
             }
         }
     }
+    func fahrenheitToCelsius(f: Double) -> Double {
+       return (f - 32) * 5/9
+    }
     private func dailyCell(weather:DailyWeather) -> some View {
         HStack {
             Text(cityVM.getDayFor(timestamp: weather.dt).uppercased())
                 .frame(width: 50)
-            
+            //Text("\(String(format: "%0.1f",fahrenheitToCelsius(f: Double(cityVM.getTempFor(temp: weather.temp.min)) ?? 10.0)))℃")
             Spacer()
-            Text("\(cityVM.getTempFor(temp: weather.temp.max)) | \(cityVM.getTempFor(temp: weather.temp.min))℃").frame(width: 150)
+            Text("\(String(format: "%0.1f",fahrenheitToCelsius(f: Double(cityVM.getTempFor(temp: weather.temp.max)) ?? 10.0)))) | \(String(format: "%0.1f",fahrenheitToCelsius(f: Double(cityVM.getTempFor(temp: weather.temp.min)) ?? 10.0)))℃").frame(width: 150)
             Spacer()
             cityVM.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon : "sun.max.fill")
         }

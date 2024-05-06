@@ -151,6 +151,34 @@ final class CityViewViewModel: ObservableObject {
             return Image(systemName: "sun.max.fill")//sunny
         case "01n":
             return Image(systemName: "moon.fill")
+        case "02d":
+            return Image(systemName: "cloud.sun.fill")//sunny
+        case "0n":
+            return Image(systemName: "cloud.moon.fill")//sunny
+        case "03d":
+            return Image(systemName: "cloud.fill")//sunny
+        case "03n":
+            return Image(systemName: "cloud.fill")//sunny
+        case "04d":
+            return Image(systemName: "cloud.fill")//sunny
+        case "04n":
+            return Image(systemName: "cloud.fill")//sunny
+        case "09d":
+            return Image(systemName: "cloud.drizzle.fill")//sunny
+        case "09n":
+            return Image(systemName: "cloud.drizzle.fill")//sunny
+        case "010d":
+            return Image(systemName: "cloud.heavyrain.fill")//sunny
+        case "010n":
+            return Image(systemName: "cloud.heavyrain.fill")//sunny
+        case "011d":
+            return Image(systemName: "cloud.bolt.fill")//sunny
+        case "011n":
+            return Image(systemName: "cloud.bolt.fill")//sunny
+        case "013d":
+            return Image(systemName: "cloud.snow.fill")//sunny
+        case "013n":
+            return Image(systemName: "cloud.snow.fill")//sunny
         default:
             return Image(systemName: "sun.max.fill")
         }
